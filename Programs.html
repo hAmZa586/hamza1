@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corvit</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Include FontAwesome for icons if not already included -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div>
+            <h1>Corvit</h1>
+            <ul class="active">
+                <li ><a href="Index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li ><a href="AboutUs.html"><i class="fa-solid fa-users"></i> About Us</a></li>
+
+                <li ><a href="Programs.html"><i class="fa-solid fa-book"></i> Programs</a></li>
+                <li ><a href="ContactUs.html"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main body -->
+    <main id="programsMain">
+        <div id="programs">
+          <div id="courses">
+            <div>
+              <h2>CCNA</h2>
+              <button>View Details</button>
+            </div>
+            <div>
+              <h2>DevOps</h2>
+              <button onclick="openDevOpsDetails()">View Details</button>
+            </div>
+          </div>
+          <div id="coursesDetails">
+            <div id="devOpsDetails">
+              <span class="closeModal" onclick="closeDevOpsDetails()">x</span>
+              <p>
+                <b>Course Fees:</b>
+                <span>35000</span>
+                <br />
+                <br />
+                <b>Duration:</b>
+                <span>3 months</span>
+                <br />
+                <br />
+                <b>Days:</b>
+                <span>Saturday</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <h1>Simple Calculator</h1>
+    <div>
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" />
+    </div>
+    <div>
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" />
+    </div>
+    <div>
+        <label for="operation">Operation:</label>
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+    </div>
+    <button onclick="calculate()">Calculate</button>
+    <h2>Result: <span id="result"></span></h2>
+
+      </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Corvit. All rights reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
